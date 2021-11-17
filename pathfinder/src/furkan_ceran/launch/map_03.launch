@@ -1,0 +1,18 @@
+<launch>
+  <rosparam command="load" file="$(find furkan_ceran)/config/map_params.yaml" />
+
+  <!-- Load the image. -->
+  <node pkg="grid_map_demos" type="image_publisher.py" name="image_publisher" output="screen">
+    <param name="image_path" value="$(find furkan_ceran)/images/map_3.png" />
+    <param name="topic" value="~image" />
+  </node>
+
+  <!-- Launch the grid map image to grid map demo node. -->
+  <node pkg="grid_map_demos" type="image_to_gridmap_demo" name="image_to_gridmap_demo" output="screen" />
+
+  <!-- Launch the grid map visualizer -->
+  <node pkg="grid_map_visualization" type="grid_map_visualization" name="grid_map_visualization" output="screen" />
+
+  <!-- Launch RViz with the demo configuration -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find furkan_ceran)/rviz/map_settings.rviz" />
+</launch>

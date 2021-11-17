@@ -1,0 +1,8 @@
+prefix=/home/ceran/pathfinder/devel
+
+Name: furkan_ceran
+Description: Description of furkan_ceran
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

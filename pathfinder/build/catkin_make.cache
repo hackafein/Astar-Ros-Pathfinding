@@ -1,0 +1,2 @@
+furkan_ceran:grid_map/grid_map:grid_map/grid_map_core:grid_map/grid_map_costmap_2d:grid_map/grid_map_cv:grid_map/grid_map_demos:grid_map/grid_map_filters:grid_map/grid_map_loader:grid_map/grid_map_msgs:grid_map/grid_map_octomap:grid_map/grid_map_pcl:grid_map/grid_map_ros:grid_map/grid_map_rviz_plugin:grid_map/grid_map_sdf:grid_map/grid_map_visualization
+-DCATKIN_DEVEL_PREFIX=/home/ceran/pathfinder/devel -DCMAKE_INSTALL_PREFIX=/home/ceran/pathfinder/install -G Unix Makefiles
